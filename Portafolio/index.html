@@ -1,61 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Libre+Franklin&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Roboto+Slab:wght@300&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Libre+Franklin&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Roboto+Slab:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
     <title>Formulario</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="navbar"></div>
+      <div class="navbar"></div>
     </header>
     <main class="portada">
-        <section class="flex-container-1">
+      <section class="flex-container-1">
+        <div>
+          <h4 class="titulo">Acceder a Chrome</h4>
+        </div>
+        <div class="google"></div>
+        <div>
+          <label
+            for="correo"
+            id="correo"
+            class="etiqueta-correo"
+            onclick="changeColor()"
+          >
+            <input
+              id="input"
+              class="input-correo"
+              name="correo"
+              type="text"
+              placeholder="Correo electronico o teléfono"
+            />
+          </label>
+          <section>
             <div>
-                <h4 class="titulo">Acceder a Chrome</h4>
+              <a href="#">
+                <h6 class="pregunta-correo">
+                  ¿Has olvidado tu correo electrónico?
+                </h6>
+              </a>
+              <h6 class="texto-2">
+                ¿Esta no es tu computadora? Usa el modo de invitado para navegar
+                de forma privada.
+                <a class="mas-informacion" href="">Más informacion</a>
+              </h6>
             </div>
-            <div class="google">
-            </div>
-            <div>
-                <label for="correo" id="correo" class="etiqueta-correo" onclick="changeColor()">
-
-                    <input id="input" class="input-correo" name="correo" type="text"
-                        placeholder="Correo electronico o teléfono">
-                </label>
-                <section>
-                    <div>
-                        <a href="#">
-                            <h6 class="pregunta-correo">¿Olvidaste el correo electrónico?</h6>
-                        </a>
-                        <h6 class="texto-2">¿Esta no es tu computadora? Usa el modo de invitado para navegar de forma
-                            privada. <a class="mas-informacion" href="">Mas informacion</a></h6>
-                    </div>
-                </section>
-                <section class="botones">
-                    <button class="crear-cuenta">Crear cuenta</button>
-                    <button class="siguiente">Siguiente</button>
-                </section>
-            </div>
-        </section>
+          </section>
+          <section class="botones">
+            <button class="crear-cuenta">Crear cuenta</button>
+            <button class="siguiente">Siguiente</button>
+          </section>
+        </div>
+      </section>
+      <section>
+        <div><label for="country" class="paises">
+            <select id="country" name="country" class="paises">
+                <option value="espana">Español(España)</option>
+                <option value="usa">Estados Unidos</option>
+                <option value="canada">Canadá</option>
+                <option value="mexico">México</option>
+                <option value="china">China</option>
+                <option value="latinoamerica">Español(Latinoamerica)</option>
+            </select>
+        </label></div>
+        <div></div>
+        <div></div>
+      </section>
     </main>
     <script src="interactivity.js"></script>
-</body>
-
+  </body>
 </html>
